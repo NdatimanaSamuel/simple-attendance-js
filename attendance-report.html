@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Report</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>Attendance</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="create-module.html">Create Module</a></li>
+            <li><a href="my-module.html">My Modules</a></li>
+            <li><a href="attendance.html">Take Attendance</a></li>
+            <li><a href="attendance-report.html">Attendance Report</a></li>
+            <li><a href="index.html" class="logout-link">Logout</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <div class="navbar">
+            <h2>Attendance Report</h2>
+            <p>Welcome Lecturer</p>
+        </div>
+
+        <section class="report-controls">
+            <div class="form-group">
+                <label for="reportModule">Filter by Module</label>
+                <select id="reportModule">
+                    <option value="">All Modules</option>
+                </select>
+            </div>
+            <p><strong id="reportCount">0</strong> attendance record(s)</p>
+        </section>
+
+        <div class="table-container report-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Registration Number</th>
+                        <th>Student Name</th>
+                        <th>Module</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTableBody"></tbody>
+            </table>
+            <p id="emptyReport" class="empty-state">No attendance records found.</p>
+        </div>
+    </main>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/attendance-report.js"></script>
+</body>
+</html>

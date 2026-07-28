@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Take Attendance</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2>Attendance</h2>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="create-module.html">Create Module</a></li>
+            <li><a href="my-module.html">My Modules</a></li>
+            <li><a href="attendance.html">Take Attendance</a></li>
+            <li><a href="attendance-report.html">Attendance Report</a></li>
+            <li><a href="index.html" class="logout-link">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="navbar">
+            <h2>Take Attendance</h2>
+            <p>Welcome Lecturer</p>
+        </div>
+
+        <div class="attendance-container">
+
+            <form id="attendanceForm">
+            <div class="form-group">
+                <label for="module">Select Module</label>
+
+                <select id="module">
+                    <option value="">Select Module</option>
+                </select>
+                <small id="moduleError" class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="registrationNumber">Registration Number</label>
+
+                <input
+                    type="text"
+                    id="registrationNumber"
+                    placeholder="Enter Registration Number"
+                    autocomplete="off">
+                <small id="registrationNumberError" class="error"></small>
+            </div>
+
+            <button type="submit" id="markAttendance">
+                Mark Attendance
+            </button>
+            </form>
+
+            <p id="attendanceMessage" class="message" role="status" aria-live="polite"></p>
+
+            <hr>
+
+            <h3>Student Information</h3>
+
+            <p><strong>Name :</strong>
+                <span id="studentName">-</span>
+            </p>
+
+            <p><strong>Status :</strong>
+                <span id="status">-</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/attendance.js"></script>
+
+</body>
+
+</html>

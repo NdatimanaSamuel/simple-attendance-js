@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Create a  Module</title>
+                <link rel="stylesheet" href="css/dashboard.css"/>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+    <!-- sidebar menu -->
+    <div class="sidebar">
+      <h2>Attendance</h2>
+      
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+         <li><a href="create-module.html">Create Module</a></li>
+          <li><a href="my-module.html">My Modules</a></li>
+           <li><a href="attendance.html">Take Attendance</a></li>
+            <li><a href="attendance-report.html">Attendance Report</a></li>
+             <li><a href="index.html" class="logout-link">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+
+    <div class="main-content">
+        <!-- navigation -->
+         <div class="navbar">
+            <h2>Dashbaord</h2>
+            <p>Welcome Lecturer</p>
+         </div>
+
+    
+      <div class="form-container">
+        <h2>Module Information</h2>
+
+        <form id="moduleform">
+            <div class="form-group">
+                <label>Module Code</label>
+                <input type="text" id="modulecode" placeholder="Example : CS01"/>
+                <small id="moduleCodeError" class="error"></small>
+            </div>
+
+
+            <div class="form-group">
+                <label>Module Name</label>
+                <input type="text" id="modulename" placeholder="Example : Web Development"/>
+                <small id="moduleNameError" class="error"></small>
+            </div>
+
+
+
+            <div class="form-group">
+                <label>Academic Year</label>
+                <input type="text" id="academicyear" placeholder="Example : 2025-2026"/>
+                <small id="academicYearError" class="error"></small>
+            </div>
+
+
+            <div class="form-group">
+                <label>Semester </label>
+               <select id="semester">
+               <option value="">Select Semester</option>
+               <option>Semester I</option>
+               <option>Semester II</option>
+               </select>
+                <small id="semesterError" class="error"></small>
+            </div>
+
+              <div class="form-group">
+                <label>Lecturer Name</label>
+                <input type="text" id="lecturername" placeholder="Example : Smauel"/>
+                <small id="lecturerNameError" class="error"></small>
+            </div>
+           <button type="submit">
+            Submit
+           </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+</div>
+    </body>
+<script src="js/auth.js"></script>
+<script src="js/module.js"></script>
+</html>

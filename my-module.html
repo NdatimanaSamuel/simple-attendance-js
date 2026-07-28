@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+          My Module
+        </title>
+        <link rel="stylesheet" href="css/dashboard.css"/>
+    </head>
+
+    <body>
+<div class="container">
+    <!-- sidebar menu -->
+    <div class="sidebar">
+      <h2>Attendance</h2>
+      
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+         <li><a href="create-module.html">Create Module</a></li>
+          <li><a href="my-module.html">My Modules</a></li>
+          <li><a href="attendance.html">Take Attendance</a></li>
+            <li><a href="attendance-report.html">Attendance Report</a></li>
+             <li><a href="index.html" class="logout-link">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+
+    <div class="main-content">
+        <!-- navigation -->
+         <div class="navbar">
+            <h2>Dashbaord</h2>
+            <p>Welcome Lecturer</p>
+         </div>
+
+ 
+   
+     <div class="table-container">
+
+        <table>
+<thead>
+    <tr>
+        <th>No</th>
+    <th>Module Code</th>
+    <th>Module Name</th>
+    <th>Academic  year</th>
+    <th>Semester</th>
+    <th>Lecturer Name</th>
+    <th>Action</th>
+    
+    </tr>
+
+</thead>
+
+<tbody id="moduleTablebody">
+
+   
+</tbody>
+        </table>
+
+     </div>
+
+
+    </div>
+
+</div>
+    </body>
+    <script src="js/auth.js"></script>
+    <script src="js/my-module.js"></script>
+</html>

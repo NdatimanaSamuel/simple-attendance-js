@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Student Registration form
+        </title>
+        <link rel="stylesheet" href="css/student_css.css"/>
+    </head>
+    <body>
+        <div class="registration-container">
+            <div class="registration-card">
+                <h1>Student Attendance System</h1>
+                <h2>Student Module Registration</h2>
+
+                <form id="studentForm">
+
+                    <div class="form-group">
+                     <label>Registration number</label>
+                     <input type="text" id ="registrationnumber" placeholder="Enter Your Reg Number" autocomplete="off"/>
+                     <small id="regNumberError" class="error"></small>
+                    </div>
+
+                     <div class="form-group">
+                     <label>Student Name</label>
+                     <input type="text" id ="studentName" placeholder="Enter Your Student Name"/>
+                     <small id="studentNameError" class="error"></small>
+                    </div>
+
+                     <div class="form-group">
+                     <label>Module Name</label>
+                    <select id="module">
+                  <option value="">Select Module</option>
+                    </select>
+                     <small id="moduleError" class="error"></small>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <p id="registrationMessage" class="message" role="status" aria-live="polite"></p>
+
+                </form>
+ <p class="register-link">Access Dashbaord
+        <a href="index.html">Get in here</a></p>
+            </div>
+
+        </div>
+    </body>
+    <script src="js/student-register.js"></script>
+</html>
